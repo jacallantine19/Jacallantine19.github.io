@@ -477,7 +477,8 @@ footer
         /* height: 25vh; */
 
         & img{
-            transform: translateY(0px);
+            /* width: 50%; */
+            transform: translateY(25px) !important;
         }
       }
       .container1

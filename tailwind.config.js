@@ -8,6 +8,7 @@ module.exports = {
         // Define a max-width breakpoint
         'max-md': { max: '768px' }, 
         'low-md': {max: '500px'},
+        '300-md': {max: '300px'},
         '1100-md': {max: '1100px'}
       },
     },
