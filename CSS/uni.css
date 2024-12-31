@@ -373,7 +373,7 @@ footer
 
 #ABC{
     color: rgba(0, 0, 0, 0.85) !important;
-    font-size: 32px !important;
+    font-size: clamp(  20px, 3vh ,32px )!important;
     font-weight: 600 !important;
     font-family:FortBold, Arial, sans-serif ;
 }
@@ -414,7 +414,7 @@ footer
 
       #ABC
       {
-        font-size: 28px !important;
+        font-size: 20px !important;
       }
   
   
