@@ -1,0 +1,511 @@
+body
+{
+    background-color: #e0e1dd;
+    background-color: rgba(22, 22, 22, 0.6);
+}
+.ContentContainer
+{
+    position: relative;
+    /* border-right: 4px solid rgba(0, 0, 0, 0.3);
+    border-left: 4px solid rgba(0, 0, 0, 0.3); */
+    /* padding: 0px 20px; */
+    /* opacity: 0; */
+    width: 100%;
+    /* height: 65vh; */
+    /* transform: translateY(100px) translateX(-100px); */
+    z-index: 1;
+    animation: ShowLeft 2s forwards;
+    background-color: lightblue;
+}
+
+.Column
+{
+    /* width: 50%; */
+    height: 100%;
+}
+
+
+.Primary-btn {
+    background-color: rgb(103, 103, 255);
+    padding: 15px 45px;
+    border: 3px solid rgb(103, 103, 255);
+    border-radius: 24px;
+    transition: 300ms ease-in;
+
+    &:hover{
+        background-color: rgba(103, 103, 255, 0.5);
+    }
+}
+
+
+.Secondary-btn
+{
+    background-color: transparent;
+    padding: 15px 45px;
+    border: 3px solid rgb(103, 103, 255);
+    border-radius: 24px; 
+
+    &:hover{
+        transition: 300ms ease-in;
+        background-color: rgba(103, 103, 255, 0.5);
+        /* text-decoration: underline; */
+        border: 3px solid rgb(103, 103, 255) ;
+    }
+}
+
+
+
+@keyframes animateSlideDown {
+    0% {
+        transform: translateY(-150%);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes animateSlideUp {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-150%);
+    }
+}
+
+@keyframes animateSlideUpH1 {
+    0% {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes typewriter
+{
+    from {width: 0;}
+}
+@keyframes animatedBar {
+    0% {
+        transform: translateX(-100vw); /* Start off-screen to the left */
+    }
+    /* 50% {
+        transform: translateX(120vw); /* Move off-screen to the right */
+    /* }  */
+    100% {
+        transform: translateX(100vw); /* Return to the starting position */
+    }
+}
+
+
+
+h1{
+    font-size: clamp(25px, 5vw, 72px);
+    font-weight: 700;
+    line-height: clamp(25px, 5vw, 72px);
+    /* text-align: center; */
+    opacity: 0;
+    /* animation: animateSlideUpH1 2s forwards ; */
+}
+
+h2{
+    font-size: clamp(28px, 2vw, 48px);
+    font-weight: 700;
+}
+
+
+h3
+{
+    font-size: clamp(16px, 4vw, 34px);
+    font-weight: 600;
+    opacity: 0;
+}
+
+h4{
+    font-size: clamp(20px, 1.8vw, 22px);
+    font-weight: 600;
+}
+
+p{
+    font-size: clamp(12px, 1.4vw, 20px);
+    opacity: 0;
+}
+ 
+li
+{
+    opacity: 0;
+}
+img{
+   
+    height: 100%;
+    width: 100%;
+}
+
+
+#MobileDrop
+{
+    height: 100vh;
+    color: white;
+position: fixed !important;
+top: 0;
+left: 0;
+    width: 100vw;
+background: url("../PHOTO/cars.jpg") ;
+background-repeat: no-repeat;
+background-size: cover;
+position: relative;
+z-index: 100000;
+transition: 300ms ease;
+
+
+& h1
+{
+    font-size: 42px;
+}
+
+&::after
+{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: black;
+    opacity: 0.8;
+    z-index: -1;
+}
+}
+
+#MobileClose{
+    font-weight: 100;
+    font-family: unset;
+}
+
+
+.ShowMobile {
+    display: flex; /* Ensure visibility */
+    animation: animateSlideDown 1s forwards;
+}
+
+.HiddenMobile {
+    transform: translateY(-150%);
+    /* No display: none, so animations can run */
+}
+
+.HideMobile {
+    animation: animateSlideUp 1s forwards;
+}
+
+.SlideUp
+{
+    animation: animateSlideUpH1 1s forwards;
+}
+
+nav {
+    /* background-color: #003566;
+    background-color: white; */
+    height: 75px;
+    width: 100vw;
+    position: relative;
+    padding-left: 6%;
+
+    & #a-container
+    {
+        height: 100%;
+    }
+
+    & a{
+        display: flex;
+        position: relative;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        font: 16px / 24px FortBold, Arial, sans-serif;
+        color: white;
+        color: black;
+        height: 100%;
+        padding:0px 10px;
+        transition: 300ms ease;
+    &:hover
+    {
+        /* color: white; */
+        /* background-color: rgba(255, 255, 255, 0.1);
+        background-color: rgba(0, 0, 0, 0.1); */
+        transition: 300ms ease;
+    }
+
+    &::after{
+        content: "";
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 0%;
+        height: 4px;
+        background-color: black;
+        z-index: 1000;
+        transition:300ms ease;
+
+       
+    }
+
+    &:hover::after{
+        transition:  300ms ease;
+        width: 100%;
+    }
+
+
+    }
+    
+
+    & #hamburger{
+        transform:scalex(-1.5)
+    }
+
+    &::before{
+        content:"";
+        position: absolute;
+        width: 100%;
+        height: 4px;
+        background-color: rgb(180, 180, 180);
+        top: 100%;
+        left: 0%;
+        z-index: 4;
+    }
+    &::after{
+        content:"";
+        position: absolute;
+        width: 10%;
+        height: 4px;
+        background: radial-gradient(circle, rgba(180,180,180,1) 0%, rgba(255,255,255,1) 0%, rgba(180,180,180,0.8) 28%);
+        top: 100%;
+        left: -20px;
+        z-index: 5;
+        /* box-shadow: 0 0 10px 5px rgba(128, 128, 128, 0.8); Glow effect */
+        /* filter: brightness(1); Makes the bar brighter */
+        animation: animatedBar 8s ease-in-out infinite;
+    }
+    
+}
+
+footer
+{
+    /* border-top: 4px solid transparent; */
+    background-color: rgb(27, 27, 27);
+    overflow: hidden;
+    width: 100%;
+    z-index: 1;
+    position: relative;
+    color: white;
+    padding: 10px clamp(20px, 15vw, 400px);
+
+    & section{
+        padding: 10px clamp(20px, 5vw, 400px);
+    }
+   
+
+    & li{
+        position: relative;
+        color: white;
+        font-size: clamp(18px, 1.5vw, 26px);
+        width: fit-content;
+
+        &::before{
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 2px;
+            background-color: white;
+            opacity: 0;
+            top: 100%;
+            z-index: 2;
+            transition: 300ms ease;
+        }
+
+        &:hover::before{
+            opacity: 1;
+            transition: 300ms ease;
+        }
+
+    }
+
+    /* & #SiteMap{
+        margin-bottom: 20px;
+    } */
+
+    
+    & h3, h4{
+        font-family: Montserrat ;
+        width: fit-content;
+        color: white;
+        font-style: italic;
+    }
+
+
+    &::before{
+        content:"";
+        position: absolute;
+        width: 100%;
+        height: 4px;
+        background-color: rgb(180, 180, 180);
+        top: 0;
+        left: 0%;
+        z-index: 4;
+    }
+    &::after{
+        content:"";
+        position: absolute;
+        width: 10%;
+        height: 4px;
+        background: radial-gradient(circle, rgba(180,180,180,1) 0%, rgba(255,255,255,1) 0%, rgba(180,180,180,1) 28%);
+        top: 0;
+        left: -20px;
+        z-index: 5;
+        /* box-shadow: 0 0 10px 5px rgba(128, 128, 128, 0.8); Glow effect */
+        /* filter: brightness(1); Makes the bar brighter */
+        animation: animatedBar 8s ease-in-out infinite;
+    }
+}
+
+
+#ABC{
+    color: rgba(0, 0, 0, 0.85) !important;
+    font-size: 32px !important;
+    font-weight: 600 !important;
+    font-family:FortBold, Arial, sans-serif ;
+}
+
+
+
+
+
+@media (max-width: 1000px)
+  {
+    .ContentContainer
+    {
+        height: 35vh;
+    }
+  }
+
+
+
+
+
+
+
+
+
+@media (max-width: 768px)
+  {
+      body{
+          /* background-color: rgb(27, 27, 27); */
+      }
+  
+      
+      #MobileMenu{
+          display: flex;
+          margin-left: 5%;
+          margin-right: 5%;
+          color: black;
+      }
+
+      #ABC
+      {
+        font-size: 28px !important;
+      }
+  
+  
+      nav{
+          justify-content: normal !important;
+          height: 75px;
+      }
+  
+      #footer{
+          flex-direction: column;
+  
+          & .container{
+              align-items: center;
+              padding:  10px 0;
+          }
+  
+          #SiteMap{
+              display: none;
+              margin-bottom: 0;
+          }
+  
+          #ContactInformation
+          {
+              display: none;
+          }
+  
+          #OurSocials
+          {
+              display: none;
+          }
+  
+      }
+  
+      .header{
+         margin-bottom: 0;
+         margin-bottom: 0;
+      }
+  
+      .ContentContainer{
+        flex-direction: column;
+        height: 35vh;
+        /* row-gap: 50px; */
+          align-items: normal;
+          justify-content: space-evenly;
+          height: fit-content;
+          padding: 0px;
+          width: 100%;
+          z-index: 5;
+
+          & h1{
+            font-size: 40px;
+            line-height: 40px;
+            white-space: wrap;
+          }
+      }
+
+      .Column
+      {
+        width: 100%;
+        height: 25vh;
+
+        & img{
+            height: 350px !important;
+            width: 75% !important;
+            transform: translateY(0px) !important;
+        }
+      }
+      .container1
+          {
+            display: flex;
+              flex-direction: column;
+              font-size: 10px;
+              padding: 0;
+              height: fit-content;
+              align-items: center;
+              padding: 50px;
+              row-gap: 25px;
+
+              & .card{
+                width:220px;
+                height: 300px;
+                font-size: 10px;
+              }
+
+          }
+  
+  }
+
+  @media (max-width: 500px)
+  {
+    
+  }
+
+  

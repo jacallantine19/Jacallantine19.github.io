@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ABC Holding</title>
+    <link rel="stylesheet" href="./src/output.css">
+    <link rel="stylesheet" href="./CSS/uni.css">
+    <link rel="stylesheet" href="./CSS/index.css">
+</head>
+<body>
+
+    <body class = "flex items-center justify-center flex-col [padding-top:75px]">
+        <nav class="flex justify-start items-center max-md:[padding:0px] shadow-xl [z-index:100] [position:fixed] [top:0] bg-white">
+            
+              <!-- Logo -->
+              <!-- <a href="#" class="text-lg font-bold">MyLogo</a> -->
+          
+              <div class="hidden md:flex justify-center items-center gap-x-9" id = "a-container">
+                <a class="bg-white" href="#" id="ABC">ABC Holding</a>
+                <a href="#" >Investing</a>
+                <a href="#" >About</a>
+                
+
+                <a href="#" >Contact</a>
+             
+            </div>
+    
+            <button class="hidden flex justify-between items-center text-gray-400 focus:outline-none focus:text-white w-[100%]" id = "MobileMenu">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" id="hamburger">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                </svg>
+
+                <h1 id = "ABC"> ABC Holding</h1>
+              </button>
+    
+    
+          </nav>
+
+        <!-- Mobile Drop -->
+          <div class="flex flex-col justify-center items-center HiddenMobile" id="MobileDrop">
+            <h1 class="h-[30%] flex items-center justify-center">ABC Holding</h1>
+            <div class= "flex flex-col items-center h-[70%] gap-y-10" id="MobileDropContent">
+    
+    
+                    <button class= "Primary-btn" id="ServiceButton">SERVICES</button>
+                    <button class= "Secondary-btn">CONTACT</button>
+    
+                    <button class="text-4xl" id = "MobileClose">x</button>
+            </div>
+
+          </div>
+
+
+          <div class= "ContentContainer  [padding:0px_20px] flex flex-row   h-[65vh] 1100-md:h-[45vh] max-md:[padding:0px_0px] max-md:h-[45vh]">
+
+            <!-- <div class="flex flex-row"> -->
+
+            
+            <div class="Column flex flex-col items-normal justify-center gap-y-10 w-[55%] md:px-14 max-md:[padding:40px_20px]">
+              <h1 class = "">About ABC Holding Co.</h1>
+              <p class="text-left">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam qui molestias porro earum, natus voluptas laboriosam magni  exercitationem repudiandae aliquid laudantium officiis quisquam. Iure aspernatur odit illum vitae explicabo officia.</p>
+            </div>
+
+            <div class="Column flex justify-center w-[45%] max-md:[height:15vh]" id="c1">
+              <img src="./PHOTO/help.jpg" alt="" class="shadow-2xl rounded-lg">
+            </div>
+
+            <!-- </div>s -->
+            
+            
+          </div>
+
+
+          <div class="flex flex-col justify-center [padding:0px_20%] h-[50vh] gap-y-10 [color:black] [background:white] max-md:[padding-top:65px] max-md:h-[40vh] max-md:[padding:0px_50px] low-md:h-[40vh] low-md:[padding-top:30px] ">
+
+            <!-- <div class="bg-white [border-radius:10px] [padding:20px_40px] h-[70%] w-[100%] flex flex-col justify-evenly "> -->
+            <h1 class="[font-size:50px] max-md:[font-size:32px] low-md:[font-size:26px]">Helping businesses serve their clients.</h1>
+
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, doloribus. Corporis modi ullam illum accusamus cupiditate nam nemo esse! Voluptatem distinctio architecto beatae in iste saepe quam laudantium expedita ut.</p>
+              <!-- </div> -->
+          </div>
+    
+          <footer class=" flex flex-col justify-between [padding-top:5%] w-[100%] h-[35vh] bg-slate-700 [color:white] max-md:h-[fit-content]" >
+
+              
+<section class="flex flex-row justify-between w-[100%] h-[fit-content] bg-slate-700 [color:white] max-md:flex-col max-md:gap-y-3">
+
+  <div class=" flex items-center flex-col">
+    <h3  class= "[cursor:pointer] toggle-ul">Contact Information</h3>
+    <ul class="max-md:hidden">
+      <li>Address</li>
+      <li>Phone number</li>
+      <li>Email Address</li>
+    </ul>
+</div>
+
+<div class=" flex items-center flex-col">
+  <h3 class= "[cursor:pointer] toggle-ul" id="SiteMap">Site Map</h3>
+  <ul class="max-md:hidden">
+    <li>Investors</li>
+    <li>About</li>
+    <li>Contact</li>
+  </ul>
+</div>
+
+<div class=" flex items-center flex-col">
+<h3 class="[cursor:pointer] toggle-ul">Socials</h3>
+<ul class="max-md:hidden">
+  <li></li>
+</ul>
+</div>
+
+</section>
+
+
+
+          <div class="flex flex-row justify-between">
+            <p class="[color:lightgray]">Copy right</p>
+            <p class=[color:lightgray]>Designed by Jared Callantine</p>
+      </div>
+          </footer>
+
+
+    
+          <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+          <script src="./JS/uni.js"></script>
+    <script src="./JS/index.js"></script>
+
+
+
+
+
+  </body>
+</html>
