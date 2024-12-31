@@ -3,14 +3,12 @@
 
 
 #c1{
-    /* background-image: url("../PHOTO/help.jpg");
-    background-size: cover;
-    background-position: center; */
+   
 
     & img{
-      width: 90%;
-   height: 90%;
-    transform: translateY(100px);   
+      /* width: 90%;
+   height: 90%; */
+    /* transform: translateY(100px);    */
     }
    
 
