@@ -10,6 +10,7 @@ module.exports = {
         'low-md': {max: '500px'},
         '300-md': {max: '300px'},
         '1100-md': {max: '1100px'}, 
+        '1000-md': {max: '1000px'}, 
         'h-md': {'raw' : '(max-height:700px)'},
         'h-ld': {'raw' : '(max-height:500px)'}
       },

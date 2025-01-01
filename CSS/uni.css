@@ -291,9 +291,8 @@ nav {
     
 }
 
-footer
+/* footer
 {
-    /* border-top: 4px solid transparent; */
     background-color: rgb(27, 27, 27);
     overflow: hidden;
     width: 100%;
@@ -332,9 +331,6 @@ footer
 
     }
 
-    /* & #SiteMap{
-        margin-bottom: 20px;
-    } */
 
     
     & h3, h4{
@@ -364,11 +360,9 @@ footer
         top: 0;
         left: -20px;
         z-index: 5;
-        /* box-shadow: 0 0 10px 5px rgba(128, 128, 128, 0.8); Glow effect */
-        /* filter: brightness(1); Makes the bar brighter */
         animation: animatedBar 8s ease-in-out infinite;
     }
-}
+} */
 
 
 #ABC{
