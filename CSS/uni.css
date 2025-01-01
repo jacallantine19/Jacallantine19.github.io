@@ -307,8 +307,6 @@ footer
         position: relative;
         color: white;
         font-size: clamp(16px, 1.5vw, 20px);
-        width: fit-content;
-        justify-self: center;
         &::before{
             content: "";
             position: absolute;
