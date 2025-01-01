@@ -291,7 +291,7 @@ nav {
     
 }
 
-/* footer
+footer
 {
     background-color: rgb(27, 27, 27);
     overflow: hidden;
@@ -301,22 +301,18 @@ nav {
     color: white;
     padding: 10px clamp(20px, 15vw, 400px);
 
-    & section{
-        padding: 10px clamp(20px, 5vw, 400px);
-    }
    
 
     & li{
         position: relative;
         color: white;
-        font-size: clamp(18px, 1.5vw, 26px);
-        width: fit-content;
+        font-size: clamp(16px, 1.5vw, 20px);
 
         &::before{
             content: "";
             position: absolute;
             width: 100%;
-            height: 2px;
+            height: 1px;
             background-color: white;
             opacity: 0;
             top: 100%;
@@ -334,10 +330,9 @@ nav {
 
     
     & h3, h4{
-        font-family: Montserrat ;
-        width: fit-content;
+        /* font-family: Montserrat ; */
         color: white;
-        font-style: italic;
+        /* font-style: italic; */
     }
 
 
@@ -362,7 +357,7 @@ nav {
         z-index: 5;
         animation: animatedBar 8s ease-in-out infinite;
     }
-} */
+}
 
 
 #ABC{
