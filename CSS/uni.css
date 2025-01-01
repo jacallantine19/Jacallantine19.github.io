@@ -105,7 +105,7 @@ body
 h1{
     font-size: clamp(25px, 5vw, 72px);
     font-weight: 700;
-    line-height: clamp(25px, 5vw, 72px);
+    line-height: clamp(30px, 5vw, 72px);
     /* text-align: center; */
     opacity: 0;
     /* animation: animateSlideUpH1 2s forwards ; */
@@ -307,7 +307,8 @@ footer
         position: relative;
         color: white;
         font-size: clamp(16px, 1.5vw, 20px);
-
+        width: fit-content;
+        justify-self: center;
         &::before{
             content: "";
             position: absolute;
