@@ -639,6 +639,10 @@ video {
   width: 100vw;
 }
 
+.w-\[250px\] {
+  width: 250px;
+}
+
 .w-\[40\%\] {
   width: 40%;
 }
@@ -658,14 +662,6 @@ video {
 .w-fit {
   width: -moz-fit-content;
   width: fit-content;
-}
-
-.w-\[250px\] {
-  width: 250px;
-}
-
-.w-\[200px\] {
-  width: 200px;
 }
 
 .cursor-pointer {
@@ -893,10 +889,6 @@ video {
   font-size: 50px;
 }
 
-.\[padding-top\:10\%\] {
-  padding-top: 10%;
-}
-
 .\[padding-top\:5\%\] {
   padding-top: 5%;
 }
@@ -981,28 +973,12 @@ video {
     height: 100%;
   }
 
-  .\31 100-md\:w-\[40\%\] {
-    width: 40%;
-  }
-
-  .\31 100-md\:w-full {
-    width: 100%;
-  }
-
-  .\31 100-md\:w-\[175px\] {
-    width: 175px;
-  }
-
   .\31 100-md\:w-\[200px\] {
     width: 200px;
   }
 
-  .\31 100-md\:\[padding-top\:10\%\] {
-    padding-top: 10%;
-  }
-
-  .\31 100-md\:\[padding-top\:20\%\] {
-    padding-top: 20%;
+  .\31 100-md\:w-full {
+    width: 100%;
   }
 
   .\31 100-md\:\[padding-top\:5\%\] {
@@ -1031,12 +1007,12 @@ video {
     height: 350px;
   }
 
-  .max-md\:h-\[40\%\] {
-    height: 40%;
-  }
-
   .max-md\:h-\[45vh\] {
     height: 45vh;
+  }
+
+  .max-md\:h-\[55\%\] {
+    height: 55%;
   }
 
   .max-md\:h-\[55vh\] {
@@ -1048,27 +1024,7 @@ video {
     height: fit-content;
   }
 
-  .max-md\:h-\[50\%\] {
-    height: 50%;
-  }
-
-  .max-md\:h-\[60\%\] {
-    height: 60%;
-  }
-
-  .max-md\:h-\[55\%\] {
-    height: 55%;
-  }
-
   .max-md\:w-\[100\%\] {
-    width: 100%;
-  }
-
-  .max-md\:w-\[75\%\] {
-    width: 75%;
-  }
-
-  .max-md\:w-full {
     width: 100%;
   }
 
@@ -1078,6 +1034,14 @@ video {
 
   .max-md\:w-\[50\%\] {
     width: 50%;
+  }
+
+  .max-md\:w-\[75\%\] {
+    width: 75%;
+  }
+
+  .max-md\:w-full {
+    width: 100%;
   }
 
   .max-md\:flex-col {
@@ -1106,11 +1070,6 @@ video {
 
   .max-md\:gap-y-5 {
     row-gap: 1.25rem;
-  }
-
-  .max-md\:px-10 {
-    padding-left: 2.5rem;
-    padding-right: 2.5rem;
   }
 
   .max-md\:text-center {
@@ -1183,6 +1142,10 @@ video {
     width: 153px;
   }
 
+  .low-md\:w-\[70\%\] {
+    width: 70%;
+  }
+
   .low-md\:w-\[75\%\] {
     width: 75%;
   }
@@ -1193,10 +1156,6 @@ video {
 
   .low-md\:w-full {
     width: 100%;
-  }
-
-  .low-md\:w-\[60\%\] {
-    width: 60%;
   }
 
   .low-md\:flex-row {
@@ -1222,6 +1181,10 @@ video {
 
   .low-md\:\[font-size\:26px\] {
     font-size: 26px;
+  }
+
+  .low-md\:\[font-size\:32px\] {
+    font-size: 32px;
   }
 
   .low-md\:\[padding\:4\%_25px\] {
