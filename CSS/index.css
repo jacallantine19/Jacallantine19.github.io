@@ -18,6 +18,8 @@
   z-index: 1;
 }
 
+
+
 .c-button--gooey {
   color: rgb(27, 27, 27);
   text-transform: uppercase;
@@ -70,4 +72,11 @@
 
 .c-button--gooey:hover .c-button__blobs div {
   transform: scale(1.4) translateY(0) translateZ(0);
+}
+
+@media (max-width: 768px)
+{
+  .c-button{
+    font-size: 12px;
+  }
 }
