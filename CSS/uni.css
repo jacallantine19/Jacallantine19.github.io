@@ -136,6 +136,7 @@ p{
  
 li
 {
+    cursor: pointer;
     opacity: 0;
 }
 img{
@@ -229,6 +230,7 @@ nav {
         height: 100%;
         padding:0px 10px;
         transition: 300ms ease;
+
     &:hover
     {
         /* color: white; */
@@ -289,7 +291,10 @@ nav {
     }
     
 }
-
+/* #SignIn{
+    position: absolute;
+    right: 75px;
+} */
 footer
 {
     background-color: rgb(27, 27, 27);

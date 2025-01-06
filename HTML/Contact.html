@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us!</title>
+    <link rel="stylesheet" href="../src/output.css">
+    <link rel="stylesheet" href="../CSS/uni.css">
+    <link rel="stylesheet" href="../CSS/Contact.css">
+</head>
+<body>
+
+    <nav class="flex justify-start items-center max-md:[padding:0px] shadow-xl [z-index:100] [position:fixed] [top:0] bg-white">
+            
+        <!-- Logo -->
+        <!-- <a href="#" class="text-lg font-bold">MyLogo</a> -->
+    
+        <div class="hidden md:flex justify-center items-center gap-x-9" id = "a-container">
+          <a class="bg-white" href="#" id="ABC">ABC Holding</a>
+          <a href="#" >Investing</a>
+          <a href="#" >About</a>
+          
+
+          <a href="./Contact.html" >Contact</a>
+       
+      </div>
+
+      <button class="hidden flex justify-between items-center text-gray-400 focus:outline-none focus:text-white w-[100%]" id = "MobileMenu">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" id="hamburger">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+          </svg>
+
+          <h1 class = "[font-size:32px] low-md:[font-size:24px]" id = "ABC"> ABC Holding</h1>
+        </button>
+
+
+    </nav>
+
+  <!-- Mobile Drop -->
+    <div class="flex flex-col justify-center items-center HiddenMobile" id="MobileDrop">
+      <h1 class="h-[30%] flex items-center justify-center">ABC Holding</h1>
+      <div class= "flex flex-col items-center h-[70%] gap-y-10" id="MobileDropContent">
+
+              <button class= "Secondary-btn" id="ServiceButton">About</button>
+              <button class= "Secondary-btn">Contact</button>
+              <a href="./HTML/LoginPortal.html"><button class= "Secondary-btn">Log In</button></a>
+
+              <button class="text-4xl" id = "MobileClose">x</button>
+      </div>
+
+    </div>
+
+
+
+
+
+    
+    
+
+
+
+     
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <script src="./JS/uni.js"></script>
+</body>
+</html>
