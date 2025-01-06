@@ -1056,10 +1056,6 @@ video {
     width: 100%;
   }
 
-  .max-md\:w-\[100px\] {
-    width: 100px;
-  }
-
   .max-md\:flex-col {
     flex-direction: column;
   }
@@ -1215,30 +1211,18 @@ video {
     font-size: 32px;
   }
 
-  .low-md\:\[padding\:100px_25px_15px_25px\] {
-    padding: 100px 25px 15px 25px;
-  }
-
-  .low-md\:\[padding\:125px_25px_15px_25px\] {
-    padding: 125px 25px 15px 25px;
+  .low-md\:\[padding\:125px_25px_25px_25px\] {
+    padding: 125px 25px 25px 25px;
   }
 
   .low-md\:\[padding\:4\%_25px\] {
     padding: 4% 25px;
-  }
-
-  .low-md\:\[padding\:75px_25px_15px_25px\] {
-    padding: 75px 25px 15px 25px;
   }
 }
 
 @media (max-width: 300px) {
   .\33 00-md\:\[padding\:100px_10px_15px_15px\] {
     padding: 100px 10px 15px 15px;
-  }
-
-  .\33 00-md\:\[padding\:75px_10px_15px_15px\] {
-    padding: 75px 10px 15px 15px;
   }
 }
 
@@ -1248,12 +1232,8 @@ video {
     height: fit-content;
   }
 
-  .h-md\:\[padding\:100px_25px_50px_25px\] {
-    padding: 100px 25px 50px 25px;
-  }
-
-  .h-md\:\[padding\:125px_25px_50px_25px\] {
-    padding: 125px 25px 50px 25px;
+  .h-md\:\[padding\:150px_25px_50px_25px\] {
+    padding: 150px 25px 50px 25px;
   }
 
   .h-md\:\[padding\:40px_0px\] {
