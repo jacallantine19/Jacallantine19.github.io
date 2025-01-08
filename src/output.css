@@ -1232,6 +1232,10 @@ video {
     height: fit-content;
   }
 
+  .h-md\:\[height\:75vh\] {
+    height: 75vh;
+  }
+
   .h-md\:\[padding\:150px_25px_50px_25px\] {
     padding: 150px 25px 50px 25px;
   }
