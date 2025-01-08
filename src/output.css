@@ -789,6 +789,10 @@ video {
   text-align: left;
 }
 
+.text-center {
+  text-align: center;
+}
+
 .text-4xl {
   font-size: 2.25rem;
   line-height: 2.5rem;
@@ -851,6 +855,10 @@ video {
   --tw-backdrop-brightness: brightness(.5);
   -webkit-backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
   backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
+}
+
+.\[background\:url\(\.\/PHOTO\/vanc\.jpg\)\] {
+  background: url(./PHOTO/vanc.jpg);
 }
 
 .\[background\:white\] {
@@ -1232,8 +1240,9 @@ video {
     height: fit-content;
   }
 
-  .h-md\:\[height\:75vh\] {
-    height: 75vh;
+  .h-md\:\[height\:fit-content\] {
+    height: -moz-fit-content;
+    height: fit-content;
   }
 
   .h-md\:\[padding\:150px_25px_50px_25px\] {
